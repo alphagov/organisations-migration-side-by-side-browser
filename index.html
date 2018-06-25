@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Organisations Migration Side-by-Side Browser</title>
+    <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+      }
+      header {
+        height: 10vh;
+      }
+      header h1 {
+        float: left;
+        margin: 15px;
+      }
+      header select {
+        float: right;
+        margin: 20px;
+      }
+      #current-page, #new-page {
+        width: 50vw;
+        height: 90vh;
+        border: none;
+      }
+      #current-page {
+        float: left;
+        clear: both;
+      }
+      #new-page {
+        float: right;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Organisations Migration Side-by-Side Browser</h1>
+      <div id="organisation-selector"></div>
+    </header>
+    <iframe id="current-page"></iframe>
+    <iframe id="new-page"></iframe>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="organisations.js"></script>
+    <script src="sxs.js"></script>
+  </body>
+</html>
